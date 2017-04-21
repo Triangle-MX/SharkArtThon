@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Styles -->
+       
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        
+        <!-- Main -->
+        <link rel="stylesheet" href="css/main.css">
+    
+        <style>
+            #draw {
+                position: absolute;
+                z-index: 1;
+                border: 4px solid #FF0000;
+            }
+            #hero {
+                position: absolute;
+                z-index: 2;
+                top: 15%;
+                left: 30px;
+                width: 300px;
+                color: #3A3A3A;
+                font-size: 20px;
+            }
+            
+            #hero span {
+                margin-top: 5px;
+            }
+            
+            #hero span i {
+                margin-top: -5px;
+                font-size: 16px;
+                line-height: 0px;
+            }
+        </style>
+        
+  </head>
+  <body>
+   
+    <canvas width="800px" height="596px" id="draw"></canvas>
+    <!-- Hero -->
+    <div id="hero">
+        <img src="Logo.svg" width="300px;"><br><br>
+        <span>¿Por que no pintas un poco? <br><i>(Mantén pulsado tu mouse o dedo y arrástralo en el recuadro)</i></span> 
+    </div>
+    <!-- ./Hero -->
+    <!-- Retos -->
+    <div id="retos">
+        <!-- container -->
+        <div class="container-fluid">                
+	            <div class="row grid">
+                  
+                    <!-- COMO USAR:
+                        1.- No se cuantos retos son, así que hice dos (uno de segundo y otro de tercero) por categoría (Fácil, Intermedio, Avanzado), para que se puedan agregar los que uno quiera. Para evitarse problemas, lo mejor es que todos midan "col-sm-4", ya que calcule todo, y usar las clases .facil .intermedio y .avanzado para definir la altura de las cards.
+                        2.- Verde es para Tercero, y Azul para Segundo.
+                        3.- Para poner los thumbnails de los retos solo se cambia el background-image, que se puede encontrar en el atributo style de cada elemento.
+                    -->
+                   
+                    <!-- FÁCILES --> 
+                       
+                    <!-- Segundo -->
+                    <a href="reto.html"><div class="col-sm-4 reto facil segundo" style="background-image: url('http://lorempixel.com/400/400/technics');">
+                        <span class="numero">1</span>
+                        <span class="data">Segundo - Fácil</span>
+                    </div></a>
+                    
+                    <!-- Tercero -->
+                    <a href="reto.html"><div class="col-sm-4 reto facil tercero" style="background-image: url('http://lorempixel.com/400/400/technics');">
+                        <span class="numero">1</span>
+                        <span class="data">Tercero - Fácil</span>
+                    </div></a>
+                         
+                    <!-- INTERMEDIOS -->
+                         
+                    <!-- Segundo -->
+                    <a href="reto.html"><div class="col-sm-4 reto intermedio segundo" style="background-image: url('http://lorempixel.com/400/400/technics');">
+                        <span class="numero">1</span>
+                        <span class="data">Segundo - Intermedio</span>
+                    </div></a>
+                    
+                    <!-- Tercero -->
+                    <a href="reto.html"><div class="col-sm-4 reto intermedio tercero" style="background-image: url('http://lorempixel.com/400/400/technics');">
+                        <span class="numero">1</span>
+                        <span class="data">Tercero - Intermedio</span>
+                    </div></a>
+                    
+                    <!-- AVANZADOS -->             
+                    
+                    <!-- Segundo -->
+                    <a href="reto.html"><div class="col-sm-4 reto avanzado segundo" style="background-image: url('http://lorempixel.com/400/400/technics');">
+                        <span class="numero">1</span>
+                        <span class="data">Segundo - Avanzado</span>
+                    </div></a>
+                    
+                    <!-- Tercero -->
+                    <a href="reto.html"><div class="col-sm-4 reto avanzado tercero" style="background-image: url('http://lorempixel.com/400/400/technics');">
+                        <span class="numero">1</span>
+                        <span class="data">Tercero - Avanzado</span>
+                    </div></a>
+                                
+	            </div>
+	           
+        </div>
+        <!-- ./ container -->
+    </div>
+    <!-- ./ Retos -->
+    
+    
+    <!-- Scripts -->
+       
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        
+        <!-- Tether -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+            
+        <!-- Boostrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        
+        <!-- main.js -->
+        <script src="js/main.js"></script>
+        
+        <!--Masonry -->
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+        
+    <!-- ./ Scripts -->
+  </body>
+</html>

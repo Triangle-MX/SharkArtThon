@@ -1,0 +1,62 @@
+
+
+/* #Retos */
+#retos {
+    position: relative;
+    top: 600px;
+    
+}
+
+/* Reto Cards */
+.reto {
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+}
+
+/* Centré los datos del reto verticalmente con padding-top */
+
+.facil {
+    height: 200px;
+    padding-top: 20px;
+}
+
+.intermedio {
+    height: 300px;
+    padding-top: 60px;
+}
+
+.avanzado {
+    height: 400px;
+    padding-top: 100px;
+}
+
+.segundo {
+    background-color: dodgerblue;
+    background-blend-mode: overlay;
+    transition: .5s;
+}
+
+.tercero {
+    background-color: chartreuse;
+    background-blend-mode: overlay;
+    transition: .5s;
+}
+
+a .segundo:hover,  a .tercero:hover {
+    background-color: rgba(32,32,32,.5);
+}
+
+.numero {
+    font-size: 600%;
+    color: white;
+    text-shadow: 1px 1px 10px rgba(32,32,32,.7);
+    display: block;
+    margin-bottom: -30px;
+}
+
+.data {
+    font-size: 150%;
+    color: white;
+    text-shadow: 1px 1px 10px rgba(32,32,32,.7);
+}
